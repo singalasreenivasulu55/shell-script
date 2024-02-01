@@ -12,7 +12,7 @@ then
    echo "$R Source directory: $SOURCE_DIR does not exists. $N"
 fi
 
-FILE_TO_DELETE=$(find . -type f -mtime +14 -name "*.log")
+FILE_TO_DELETE=$(find $SORCE_DIR -type f -mtime +14 -name "*.log")
 
 while IFS= read -r line 
 do 
